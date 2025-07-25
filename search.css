@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  padding-top: 120px; /* More space for double-row header */
+  background: #f7f7f7;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  text-align: center;
+  padding: 20px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.search-wrapper {
+  display: inline-flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-wrapper input {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+.search-wrapper button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  justify-content: center;
+}
+
+.product {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  width: 180px;
+  text-align: center;
+  font-weight: bold;
+}
+ 
+ 
+ 
+ 

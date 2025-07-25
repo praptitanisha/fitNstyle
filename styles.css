@@ -1,0 +1,123 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}
+
+.background {
+  background-color:  white;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+  filter: brightness(0.7);
+  
+}
+
+.form-wrapper {
+  background:  white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  width: 340px;
+  margin: auto;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  transition: transform 0.2s ease-out;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #e00404;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color:rgb(179, 0, 0);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tab.active {
+  background: rgb(179,0,0);
+  color: white;
+}
+
+.form {
+  display: none;
+  flex-direction: column;
+}
+
+.form.active {
+  display: flex;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+}
+
+input.error {
+  border: 2px solid red;
+  animation: shake 0.3s;
+}
+
+.popup {
+  display: none;
+  background: #ff4b4b;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-4px); }
+}

@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" href="mains.css">
+    <title>fashion</title>
+</head> 
+<body>
+     <!--header section-->
+    <header id="header">
+<a href="/" class="logo">shop</a>
+<ul class="nav">
+    
+    <li><a href="#" onclick="scrollToTop();"><ion-icon name="home-outline"></ion-icon></a></li>
+    <li><a href="#about">about</a></li>
+    <li><a href="#product">shopping</a></li>
+    <li><a href="#contact">contact us</a></li>
+</ul>
+<ul class="util">
+    <li><a href="search.html"><ion-icon name="search-outline"></ion-icon></a></li>
+    <li><a href="login.html"><ion-icon name="person-outline"></ion-icon></a></li>
+    <li><a href="addtocart.html"><ion-icon name="bag-handle-outline"></ion-icon></a></li>
+  
+    <span class="number"></span>             
+</ul>
+<a href="#" class="menu" onclick="toggleMenu();">
+    <ion-icon name="app-outline"></ion-icon>
+</a>
+    </header>
+    <ul class="nav-mobile">
+        <li>
+            <a href="#" onclick="scrollToTop();"><ion-icon name="home-outline"></ion-icon>
+            </a>
+        </li>
+        <li><a href="#about" onclick="toogleMenu();">about</a></li>
+        <li><a href="#products" onclick="toogleMenu();">shopping</a></li>
+        <li><a href="#contact" onclick="toogleMenu();">contact us</a></li>
+    </ul>
+    <!--hero banner section-->
+    <div id="banner" class="banner">
+       <div class="women">
+        
+        <!--left-->
+        <img src="imagee.jpg/p.avif" alt="" />
+        <a href="#" class="switch-btn" onclick="switchbanner('left');">women</a>
+       <div class="content"> 
+            <h1>Ladies' Fashion</h1>
+            <p>
+                Fashionable and trendy clothes for you 
+            </p>
+            <a href="#">Shop around <ion-icon name="cart-outline"></ion-icon></a>
+       </div>
+       </div>
+    
+    <!--middle-->
+    <div class="men">
+        <img src="imagee.jpg/sebastian-romero-f7ggQjg9UPo-unsplash.jpg" alt="" />
+       <a href="#" class="switch-btn" onclick="switchbanner('middle');">men</a>
+       <div class="content">
+           <h1>Men with taste</h1>
+           <p>
+            Fashionable and trendy clothes for you 
+            </p>
+                <a href="#">Shop around <ion-icon name="cart-outline"></ion-icon></a>
+        </div>
+    </div>
+
+     <!--right part-->
+    <div class="special">
+        <img src="imagee.jpg/airam-dato-on-QrM3KKkoFHE-unsplash.jpg" alt="" />
+        <a href="#" class="switch-btn" onclick="switchbanner('right');">special</a>
+     <div class="content">
+        <h1>Premium collection</h1>
+        <p>
+            Fashionable and trendy clothes for you 
+        </p>
+        <a href="#">Shop around <ion-icon name="cart-outline"></ion-icon></a>
+    </div>
+</div>
+    <a href="#" class="reset" onclick="resetbanner()";><ion-icon name="power-outline"></ion-icon></a>
+ 
+</div>
+    <!--main section-->
+    <main>
+
+    
+    <!--call up section-->
+    <section class="call-up">
+        <div class="call-up-box">
+            <ion-icon name="send-outline"></ion-icon>
+            <div>
+                <h4>Free Shipping</h4>
+                <p>
+                    Style shipped free-simple as that.
+                </p>
+            </div>
+        </div>
+        <section class="call-up">
+            <div class="call-up-box">
+                <ion-icon name="card-outline"></ion-icon>
+                <div>
+                    <h4> Security Payment</h4>
+                    <p>
+                         pay securely and step into style.
+                    </p>
+                </div>
+            </div>
+            <section class="call-up">
+                <div class="call-up-box">
+                    <ion-icon name= "cash-outline"></ion-icon>
+                    <div>
+                        <h4>14 Days return</h4>
+                        <p>
+                        Return it if it's not the vibe.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+
+    </section>
+    <!--about section-->
+<section id="about" class="about">
+    <div class="left">
+        <div class="promotion about-box">
+            <img src="imagee.jpg/sneaker.jpg" alt="" />
+            <div class="description">
+                <h4>promotion * discount</h4>
+                <p>Style Up & Save Big-Up to 50% off!</p>
+                <a href="#">Shop now <ion-icon name="arrow-forword-outline"></ion-icon></a>
+            </div>
+        </div>
+        <div class="style about-box">
+           <img src="imagee.jpg/sunglasss.avif" alt=""/>
+           <div class="description">
+            <h4> Trendy style</h4>
+            <p>Drip,Drop-New Arrivals Just Hit</p>
+            <a href="#">Shop now <ion-icon name="arrow-forword-outline"></ion-icon></a>
+        </div>
+    </div>
+    </div>
+            <div class="right">
+                <div class="collection about-box">
+                   <img src="imagee.jpg/up.jpg" alt="" /> 
+                   <div class="description">
+                    <h4>spring collections</h4>
+                    <p>Fresh Fits,Fresh Air - Step into Spring</p>
+                    <a href="#">Shop now <ion-icon name="arrow-forword-outline"></ion-icon></a>
+                </div>
+        
+            </div>
+            <div class=" discovery about-box"> 
+               <img src="imagee.jpg/down.jpg" alt="" />
+               <div class="description">
+                <h4>Fashion discovery</h4>
+                <p>A vibe to Discover</p>
+                <a href="#">Shop now <ion-icon name="arrow-forword-outline"></ion-icon></a>
+            </div>
+    </div>
+</section>
+    <!--product sectiion-->
+    <section id="product" class="product">
+        <div class="filters"> 
+        <!--product filter-->
+        <ul id="product-filter">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-women">Women</li>
+              <li data-filter=".filter-men">Men</li>
+              <li data-filter=".filter-special">Special</li>
+            </ul>
+        </div>
+            <div class="product-container">
+           <div class="product-item filter-women">
+            <span class="hot">HOT</span>
+            
+            <img src="./imagee.jpg/phto.avif" alt="">
+            <div class="product-info">
+                <!--rating of 5 star-->
+                <ul class="product-rating">
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <h4> top </h4>
+                <p>
+                    <span class="cross">Rs.800</span>
+                    <span class="price">Rs.550</span>
+                </p>
+            </div>
+           
+             <a href="#" class="add-to-bag" data-name="Top" data-price="550">
+                                         <ion-icon name="bag-add-outline"></ion-icon>
+                                          <span class="hidden-label">Add to Bag</span>
+                                          </a>
+             
+             
+           
+            </div> 
+            
+            
+            <div class="product-item filter-women">
+                <span class="hot">HOT</span>
+                <img src="./imagee.jpg/blue.avif" alt="">
+                <div class="product-info">
+                    <!--rating of 5 star-->
+                    <ul class="product-rating">
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                    </ul>
+                    <h4> crop top </h4>
+                    <p>
+                        <span class="cross">Rs.700</span>
+                        <span class="price">Rs.450</span>
+                    </p>
+                </div>
+                <a href="#" class="add-to-bag" data-name="crop Top" data-price="450">
+                                         <ion-icon name="bag-add-outline"></ion-icon>
+                                         <span class="hidden-label">Add to Bag</span> 
+                                          </a>
+                </div> 
+                <div class="product-item filter-women">
+                    <span class="hot">HOT</span>
+                    <img src="./imagee.jpg/OIP (2).jpeg" alt="">
+                    <div class="product-info">
+                        <!--rating of 5 star-->
+                        <ul class="product-rating">
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                            <li><ion-icon name="star-outline"></ion-icon></li>
+                        </ul>
+                        <h4> kurti </h4>
+                        <p>
+                            <span class="cross">Rs.650</span>
+                            <span class="price">Rs.600</span>
+                        </p>
+                    </div>
+                     <a href="#" class="add-to-bag" data-name="Kurti" data-price="600">
+                                         <ion-icon name="bag-add-outline"></ion-icon>
+                                         <span class="hidden-label">Add to Bag</span> 
+                                          </a>
+                     
+                     
+            </div>
+            <div class="product-item filter-women">
+                <span class="hot">HOT</span>
+                <img src="./imagee.jpg/shorttop.avif" alt="">
+                <div class="product-info">
+                    <!--rating of 5 star-->
+                    <ul class="product-rating">
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                    </ul>
+                    <h4>crop top</h4>
+                    <p>
+                        <span class="cross">Rs.500</span>
+                        <span class="price">Rs.450</span>
+                    </p>
+                </div>
+               <a href="#" class="add-to-bag" data-name="crop Top" data-price="450">
+                                         <ion-icon name="bag-add-outline"></ion-icon>
+                                         <span class="hidden-label">Add to Bag</span>
+                                          </a> 
+            </div>
+            <div class="product-item filter-women">
+                <span class="hot">HOT</span>
+                <img src="./imagee.jpg/jeanwomen.avif" alt="">
+                <div class="product-info">
+                    <!--rating of 5 star-->
+                    <ul class="product-rating">
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                    </ul>
+                    <h4> Jeans</h4>
+                    <p>
+                        <span class="cross">Rs.1000</span>
+                        <span class="price">Rs.950</span>
+                    </p>
+                </div>
+                 <a href="#" class="add-to-bag" data-name="Jeans" data-price="950">
+                                         <ion-icon name="bag-add-outline"></ion-icon>
+                                         <span class="hidden-label">Add to Bag</span> 
+                                          </a>
+            </div> 
+            <div class="product-item filter-women">
+                <span class="hot">HOT</span>
+                <img src="./imagee.jpg/shorts.avif" alt="">
+                <div class="product-info">
+                    <!--rating of 5 star-->
+                    <ul class="product-rating">
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                    </ul>
+                    <h4> tishirt </h4>
+                    <p>
+                        <span class="cross">Rs.700</span>
+                        <span class="price">Rs.650</span>
+                    </p>
+                </div>
+                 <a href="#" class="add-to-bag" data-name="Top" data-price="650">
+                                         <ion-icon name="bag-add-outline"></ion-icon>
+                                          <span class="hidden-label">Add to Bag</span>
+                                          </a>
+            </div>  
+            <div class="product-item filter-women">
+                <span class="hot">HOT</span>
+                <img src="./imagee.jpg/white.avif" alt="">
+                <div class="product-info">
+                    <!--rating of 5 star-->
+                    <ul class="product-rating">
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                        <li><ion-icon name="star-outline"></ion-icon></li>
+                    </ul>
+                    <h4> top </h4>
+                    <p>
+                        <span class="cross">Rs.550</span>
+                        <span class="price">Rs.530</span>
+                    </p>
+                </div>
+                <a href="#" class="add-to-bag" data-name="Top" data-price="530">
+                                         <ion-icon name="bag-add-outline"></ion-icon>
+                                         <span class="hidden-label">Add to Bag</span>
+                                          </a> 
+                </div>
+                <div class="product-item filter-women">
+                            <span class="hot">HOT</span>
+                            <img src="./imagee.jpg/t.avif" alt="">
+                            <div class="product-info">
+                                <!--rating of 5 star-->
+                                <ul class="product-rating">
+                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                </ul>
+                                <h4> top </h4>
+                                <p>
+                                    <span class="cross">Rs.1580</span>
+                                    <span class="price">Rs.1550</span>
+                                </p>
+                            </div>
+                            <a href="#" class="add-to-bag" data-name="Top" data-price="1550">
+                                         <ion-icon name="bag-add-outline"></ion-icon>
+                                         <span class="hidden-label">Add to Bag</span>
+                                          </a> 
+                            </div>  
+                            
+                            <div class="product-item filter-women">
+                                <span class="hot">HOT</span>
+                                <img src="./imagee.jpg/whitee.avif" alt="">
+                                <div class="product-info">
+                                    <!--rating of 5 star-->
+                                    <ul class="product-rating">
+                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                    </ul>
+                                    <h4> top </h4>
+                                    <p>
+                                         
+                                        <span class="price">Rs.600</span>
+                                    </p>    
+                                </div>
+                                 <a href="#" class="add-to-bag" data-name="Top" data-price="600">
+                                         <ion-icon name="bag-add-outline"></ion-icon>
+                                          <span class="hidden-label">Add to Bag</span>
+                                          </a>
+                                </div>
+                                <div class="product-item filter-special">
+                                    <span class="hot">HOT</span>
+                                    <img src="./imagee.jpg/model7.jpeg" alt="">
+                                    <div class="product-info">
+                                        <!--rating of 5 star-->
+                                        <ul class="product-rating">
+                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                        </ul>
+                                        <h4>gown</h4>
+                                        <p>
+                                            <span class="cross">Rs.1554</span>
+                                            <span class="price">Rs.1350</span>
+                                        </p>
+                                    </div>
+                                     <a href="#" class="add-to-bag" data-name="gown" data-price="1350">
+                                         <ion-icon name="bag-add-outline"></ion-icon>
+                                          <span class="hidden-label">Add to Bag</span>
+                                          </a>
+                                    </div>  
+                                    
+                                    <div class="product-item filter-women">
+                                        <span class="hot">HOT</span>
+                                        <img src="./imagee.jpg/purple.avif" alt="">
+                                        <div class="product-info">
+                                            <!--rating of 5 star-->
+                                            <ul class="product-rating">
+                                                <li><ion-icon name="star-outline"></ion-icon></li>
+                                                <li><ion-icon name="star-outline"></ion-icon></li>
+                                                <li><ion-icon name="star-outline"></ion-icon></li>
+                                                <li><ion-icon name="star-outline"></ion-icon></li>
+                                                <li><ion-icon name="star-outline"></ion-icon></li>
+                                            </ul>
+                                            <h4> top </h4>
+                                            <p>
+                                                <span class="price">Rs.650</span>
+                                            </p>    
+                                        </div>
+                                        <a href="#" class="add-to-bag" data-name="Top" data-price="650">
+                                         <ion-icon name="bag-add-outline"></ion-icon>
+                                         <span class="hidden-label">Add to Bag</span> 
+                                          </a>
+       
+                         </div>
+                         <div class="product-item filter-men">
+                            <span class="hot">HOT</span>
+                            <img src="./imagee.jpg/male model2.jpeg" alt="">
+                            <div class="product-info">
+                                <!--rating of 5 star-->
+                                <ul class="product-rating">
+                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                </ul>
+                                <h4>Shirt </h4>
+                                <p>
+                                     
+                                    <span class="price">Rs.800</span>
+                                </p>
+                            </div>
+                             <a href="#" class="add-to-bag" data-name="shirt" data-price="800">
+                              <ion-icon name="bag-add-outline"></ion-icon>
+                               <span class="hidden-label">Add to Bag</span>
+                            </a>
+
+                            </div>  
+                            <div class="product-item filter-men">
+                                <span class="hot">HOT</span>
+                                <img src="./imagee.jpg/malemodel2.jpeg" alt="">
+                                <div class="product-info">
+                                    <!--rating of 5 star-->
+                                    <ul class="product-rating">
+                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                    </ul>
+                                    <h4> jacket </h4>
+                                    <p>
+                                       
+                                        <span class="price">Rs.1000</span>
+                                    </p>
+                                </div>
+                                 <a href="#" class="add-to-bag" data-name="jacket" data-price="1000">
+                                   <ion-icon name="bag-add-outline"></ion-icon>
+                                    <span class="hidden-label">Add to Bag</span>
+                                       </a>
+
+                                </div>  
+                                <div class="product-item filter-men">
+                                    <span class="hot">HOT</span>
+                                    <img src="./imagee.jpg/redshirt.avif" alt="">
+                                    <div class="product-info">
+                                        <!--rating of 5 star-->
+                                        <ul class="product-rating">
+                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                        </ul>
+                                        <h4> shirt </h4>
+                                        <p>
+                                            
+                                            <span class="price">Rs.650</span>
+                                        </p>
+                                    </div>
+                                    <a href="#" class="add-to-bag" data-name="shirt" data-price="650">
+                                     <ion-icon name="bag-add-outline"></ion-icon>
+                                      <span class="hidden-label">Add to Bag</span>
+                                     </a>
+ 
+                                    </div>  
+                                    <div class="product-item filter-men">
+                                        <span class="hot">HOT</span>
+                                        <img src="./imagee.jpg/jacketmen.avif" alt="">
+                                        <div class="product-info">
+                                            <!--rating of 5 star-->
+                                            <ul class="product-rating">
+                                                <li><ion-icon name="star-outline"></ion-icon></li>
+                                                <li><ion-icon name="star-outline"></ion-icon></li>
+                                                <li><ion-icon name="star-outline"></ion-icon></li>
+                                                <li><ion-icon name="star-outline"></ion-icon></li>
+                                                <li><ion-icon name="star-outline"></ion-icon></li>
+                                            </ul>
+                                            <h4> jacket</h4>
+                                            <p>
+                                                <span class="cross">Rs.2000</span>
+                                                <span class="price">Rs.1550</span>
+                                            </p>
+                                        </div>
+                                         <a href="#" class="add-to-bag" data-name="jacket" data-price="1550">
+                                        <ion-icon name="bag-add-outline"></ion-icon>
+                                        <span class="hidden-label">Add to Bag</span>
+                                         </a>
+
+                                        </div>  
+                                        <div class="product-item filter-men">
+                                            <span class="hot">HOT</span>
+                                            <img src="./imagee.jpg/tshirtcar.avif" alt="">
+                                            <div class="product-info">
+                                                <!--rating of 5 star-->
+                                                <ul class="product-rating">
+                                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                                </ul>
+                                                <h4> t-shirt </h4>
+                                                <p>
+                                                    <span class="price">Rs.700</span>
+                                                </p>
+                                            </div>
+                                             <a href="#" class="add-to-bag" data-name=" t-shirt" data-price="700">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                            <span class="hidden-label">Add to Bag</span>
+                                             </a>
+
+                                            </div>  
+                                            <div class="product-item filter-men">
+                                                <span class="hot">HOT</span>
+                                                <img src="./imagee.jpg/shirtcombo.avif" alt="">
+                                                <div class="product-info">
+                                                    <!--rating of 5 star-->
+                                                    <ul class="product-rating">
+                                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                                    </ul>
+                                                    <h4> shirtcombo </h4>
+                                                    <p>
+                                                        
+                                                        <span class="price">Rs.1300</span>
+                                                    </p>
+                                                </div>
+                                                 <a href="#" class="add-to-bag" data-name="Combo shirt" data-price="1300">
+                                                <ion-icon name="bag-add-outline"></ion-icon>
+                                                <span class="hidden-label">Add to Bag</span> 
+                                                </a>
+
+                                                 
+                                                </div>  
+                                                <div class="product-item filter-men">
+                                                    <span class="hot">HOT</span>
+                                                    <img src="./imagee.jpg/checkshirt.avif" alt="">
+                                                    <div class="product-info">
+                                                        <!--rating of 5 star-->
+                                                        <ul class="product-rating">
+                                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                                        </ul>
+                                                        <h4> shirt </h4>
+                                                        <p>
+                                                            
+                                                            <span class="price">Rs.800</span>
+                                                        </p>
+                                                    </div>
+                                                     <a href="#" class="add-to-bag" data-name="shirt" data-price="800">
+                                                     <ion-icon name="bag-add-outline"></ion-icon>
+                                                      <span class="hidden-label">Add to Bag</span>
+                                                       </a>
+
+                                                    </div>    
+                                                    <div class="product-item filter-men">
+                                                        <span class="hot">HOT</span>
+                                                        <img src="./imagee.jpg/jeanmen.avif" alt="">
+                                                        <div class="product-info">
+                                                            <!--rating of 5 star-->
+                                                            <ul class="product-rating">
+                                                                <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                <li><ion-icon name="star-outline"></ion-icon></li>
+                                                            </ul>
+                                                            <h4> jeans </h4>
+                                                            <p> 
+                                                                <span class="price">Rs.1550</span>
+                                                            </p>
+                                                        </div>
+                                                         <a href="#" class="add-to-bag" data-name="jeans" data-price="1550">
+                                                         <ion-icon name="bag-add-outline"></ion-icon>
+                                                          <span class="hidden-label">Add to Bag</span>
+                                                         </a>
+
+                                                        </div>  
+                                                        <div class="product-item filter-men">
+                                                            <span class="hot">HOT</span>
+                                                            <img src="./imagee.jpg/menshort.avif" alt="">
+                                                            <div class="product-info">
+                                                                <!--rating of 5 star-->
+                                                                <ul class="product-rating">
+                                                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                    <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                </ul>
+                                                                <h4> men shorts </h4>
+                                                                <p>
+                                                                    <span class="cross">Rs.800</span>
+                                                                    <span class="price">Rs.550</span>
+                                                                </p>
+                                                            </div>
+                                                            <a href="#" class="add-to-bag" data-name="men short" data-price="550">
+                                                          <ion-icon name="bag-add-outline"></ion-icon>
+                                                          <span class="hidden-label">Add to Bag</span>
+                                                                     </a>
+
+                                                            </div>  
+                                                            <div class="product-item filter-special">
+                                                                <span class=""></span>
+                                                                <img src="./imagee.jpg/sari5.jpeg" alt="">
+                                                                <div class="product-info">
+                                                                    <!--rating of 5 star-->
+                                                                    <ul class="product-rating">
+                                                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                        <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                    </ul>
+                                                                    <h4> sari </h4>
+                                                                    <p>
+                                                                        
+                                                                        <span class="price">Rs.1750</span>
+                                                                    </p>
+                                                                </div>
+                                                                 <a href="#" class="add-to-bag" data-name="sari" data-price="1750">
+                                                               <ion-icon name="bag-add-outline"></ion-icon>
+                                                                <span class="hidden-label">Add to Bag</span>
+                                                                  </a>
+
+                                                                </div>
+                                                                <div class="product-item filter-special">
+                                                                    <span class=""></span>
+                                                                    <img src="./imagee.jpg/sexy-woman-standing-by-the-sofa-photo.jpg" alt="">
+                                                                    <div class="product-info">
+                                                                        <!--rating of 5 star-->
+                                                                        <ul class="product-rating">
+                                                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                            <li><ion-icon name="star-outline"></ion-icon></li>
+                                                                                                               
+                                                                        </ul>
+                                                                        <h4> one piece </h4>
+                                                                        <p>
+                                                                            
+                                                                            <span class="price">Rs.1000</span>
+                                                                        </p>
+                                                                    
+                                                                    <a href="#" class="add-to-bag" data-name="one piece" data-price="1000">
+                                                                     <ion-icon name="bag-add-outline"></ion-icon>
+                                                                      <span class="hidden-label">Add to Bag</span>
+                                                                     </a>
+
+                                                                    </div>                                                                                     
+        </div>
+            </div>
+        <div class="loading-more">
+            <a href="#">explore more<ion-icon name="arrow-forward-outline"></ion-icon></a>
+        </div>                                                                                                                 
+    </section>
+    <!--new letter signup section-->
+    <section id="newsletter" class="newsletter">
+        <div class="newsletter-box">
+            <ion-icon name="mail-open-outline"></ion-icon>
+            <h4>sign up for newsletter</h4>
+        </div>
+        <p>Seasonal discount from <span  class="discount">20%</span></p>
+        <form>
+            <input type="text" placeholder="Email">
+            <input type="submit" />
+        </form>
+    </section>
+ <!--contact section-->
+ <section id="contact" class="contact">
+
+  <div class="map">
+    <iframe
+    style="border: 0; width: 100%; height: 300px;";
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768373.384473746!2d72.81361111515192!3d19
+    .05440998609443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7ef84d6b4d9%3A0x11be7d38f199c
+    edb!2sBandra%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1663254611111!5m2!1sen!2sin";
+frameborder= "0" allowfullscreen></iframe>
+ 
+  </div>
+  <div class="info-wrap">
+    <div class="info">
+    <ion-icon name="navigate-circle-outline"></ion-icon>
+    <h4>location</h4>
+    <p>
+    123 your street <br />
+     your city.state 4000
+    </p>
+  </div>
+  <div class="info">
+    <ion-icon name="mail-outline"></ion-icon>
+    <h4> Email:</h4>
+    <p> info@example.com <br />
+     contact@example.com
+    </p>
+  </div>
+  <div class="info">
+    <ion-icon name="call-outline"></ion-icon>
+    <h4>call:</h4>
+    <p>
+    123456789<br />
+      987654321
+    </p>
+  </div>
+  </div>
+  <from class="contact-form">
+    <div class="form-group">
+        <input type="text" placeholder="your name" required />
+        <input type="email" placeholder="your email" required />
+    </div>
+    <div class="form-group">
+   <input type="text" placeholder="subject" required />
+    </div>
+    <div class="form-group">
+        <textarea name="message" rows="6" placeholder="message"></textarea>
+    </div>
+    <div class="text-center">
+        <button type="submit">Send message</button>
+    </div>
+  </from>
+ </section>
+    <!--footer section-->
+    <footer>
+    <ul class="sci">
+        <li>
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon> </a>
+        </li>
+        <li>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </li>
+        <li>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+        </li>
+        <li>
+           <a class="share" href="#">
+                <ion-icon name="share-social-outline"></ion-icon></a>
+        </li>
+    </ul>
+    
+    <ul class="footer-nav">
+        <li><a href="#">store location</a></li>
+        <li><a href="#">opening hours</a></li>
+        <li><a href="#">privacy terms</a> </li>
+    </ul>
+    <div class="ask-us">
+        <p>question?</p>
+    <a href="#" class="chat">
+         <ion-icon name="chatbox-ellipses-outline"></ion-icon></a>
+    </a>
+    </div>
+    </footer>
+    <!--back to top section-->
+    <a href="#" class="back-to-top "
+    ><ion-icon name="arrow-up-outline"></ion-icon></a>
+
+    <script type="module" 
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+ 
+ 
+<script src="https://unpkg.com/desandro-matches-selector@2/matches-selector.js"></script>
+ <script src="isotope.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="script.js"></script>
+<script src="server.js"></script>
+ 
+
+ <script src="./script.js"></script><script>
+    const params = new URLSearchParams(window.location.search);
+    const msg = params.get('msg');
+    if (msg) {
+      alert(msg);
+    }
+  </script>   
+</body>
+</html>
+             
